@@ -5,11 +5,14 @@ import { useTranslation } from "react-i18next";
 
 const Misc = ({ id, active }) => {
   const { t } = useTranslation();
-
   const languages = [
     { id: "en-US", label: t("settings.languages.english") },
     { id: "es", label: t("settings.languages.spanish") },
     { id: "ja", label: t("settings.languages.japanese") }
+  ];
+  const abtblank = [
+    { id: "false", label: t("settings.proxy.disabled") },
+    { id: "true", label: t("settings.proxy.enabled") }
   ];
 
   return (
@@ -34,8 +37,14 @@ const Misc = ({ id, active }) => {
             refresh={true}
           />
         </div>
+        <div class="bg-lighter flex h-64 w-80 flex-col flex-wrap content-center items-center rounded-lg border border-input-border-color p-7 text-center">
+          <div class="p-2 text-3xl">{t("settings.proxy.aboutblank")}</div>
+          <div class="text-md p-4">{t("settings.proxy.aboutdesc")}</div>
+          <Dropdown storageKey="useBlank" options={abtblank} refresh={false} />
+        </div>
       </motion.div>
     </motion.div>
   );
-};
+}; // playing can you git pull
+// Lemme try rq might have to commit
 export default Misc;

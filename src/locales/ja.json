@@ -29,7 +29,11 @@
       "title": "プロキシ",
       "subtitle": "ニーズに合ったプロキシを選んでください",
       "automatic": "自動",
-      "buggyWarning": "(バグ)"
+      "buggyWarning": "(バグ)",
+      "aboutblank": "約空白",
+      "aboutdesc": "でプロキシ リンクを開くことができます",
+      "enabled": "有効",
+      "disabled": "無効"
     },
     "languages": {
       "title": "言語",

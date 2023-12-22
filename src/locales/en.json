@@ -29,7 +29,11 @@
       "title": "Proxy",
       "subtitle": "Choose the proxy that fits your needs",
       "automatic": "Automatic",
-      "buggyWarning": "(BUGGY)"
+      "buggyWarning": "(BUGGY)",
+      "aboutblank": "About Blank",
+      "aboutdesc": "Allows you to Open Proxied links in about:blank",
+      "enabled": "Enabled",
+      "disabled": "Disabled"
     },
     "languages": {
       "title": "Language",
